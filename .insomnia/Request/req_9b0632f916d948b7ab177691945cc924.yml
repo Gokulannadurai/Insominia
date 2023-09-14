@@ -1,22 +1,29 @@
-_id: req_acbb64f4bb8a4e19b282a2dd51d9af39
+_id: req_9b0632f916d948b7ab177691945cc924
 type: Request
 parentId: wrk_78c15a14717a492380b42ce940880385
-modified: 1694699878342
-created: 1694697124093
+modified: 1694698704845
+created: 1694698685625
 url: https://ccinboxdev.netsmartcloud.com/servlet
-name: getAddressBookItems
+name: createTask
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"uri": "/InboxServlet/getAddressBookItems",
+    	"uri": "/InboxServlet/createTask",
     	"ntstOrgId": "dev-pov",
     	"methodType": "POST",
     	"serviceName": "ccinbox",
     	"payload": {
+    		"scope": "POV_AVPM!SBOX:DEV",
     		"memberId": "82",
+    		"recipient": "MDT@POVAVPMSBOXDEV",
+    		"patientId": "1",
+    		"dueDate": "2023-09-14T00:00:00.000Z",
+    		"taskDescription": "VGVzdA==",
+    		"taskName": "test",
+    		"initialTaskStatus": "New",
     		"userId": "SYSADM",
     		"ntstOrgId": "dev-pov"
     	},
@@ -50,7 +57,7 @@ headers:
     value: "82"
     description: ""
 authentication: {}
-metaSortKey: -1694691755691
+metaSortKey: -1694691756041
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

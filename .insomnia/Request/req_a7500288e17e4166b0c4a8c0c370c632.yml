@@ -1,22 +1,23 @@
-_id: req_acbb64f4bb8a4e19b282a2dd51d9af39
+_id: req_a7500288e17e4166b0c4a8c0c370c632
 type: Request
 parentId: wrk_78c15a14717a492380b42ce940880385
-modified: 1694699878342
-created: 1694697124093
+modified: 1694700493180
+created: 1694700471144
 url: https://ccinboxdev.netsmartcloud.com/servlet
-name: getAddressBookItems
+name: getContactDetailByDirectAddress
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"uri": "/InboxServlet/getAddressBookItems",
+    	"uri": "/InboxServlet/getContactDetailByDirectAddress",
     	"ntstOrgId": "dev-pov",
     	"methodType": "POST",
     	"serviceName": "ccinbox",
     	"payload": {
     		"memberId": "82",
+    		"directAddress": "jamespike15@tag.netsmartdirect.net",
     		"userId": "SYSADM",
     		"ntstOrgId": "dev-pov"
     	},
@@ -50,7 +51,7 @@ headers:
     value: "82"
     description: ""
 authentication: {}
-metaSortKey: -1694691755691
+metaSortKey: -1694691755591
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

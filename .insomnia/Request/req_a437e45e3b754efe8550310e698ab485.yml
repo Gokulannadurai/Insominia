@@ -1,22 +1,23 @@
-_id: req_acbb64f4bb8a4e19b282a2dd51d9af39
+_id: req_a437e45e3b754efe8550310e698ab485
 type: Request
 parentId: wrk_78c15a14717a492380b42ce940880385
-modified: 1694699878342
-created: 1694697124093
+modified: 1694699806079
+created: 1694699788459
 url: https://ccinboxdev.netsmartcloud.com/servlet
-name: getAddressBookItems
+name: addAddressBookItemFromDirectory
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"uri": "/InboxServlet/getAddressBookItems",
+    	"uri": "/InboxServlet/addAddressBookItemFromDirectory",
     	"ntstOrgId": "dev-pov",
     	"methodType": "POST",
     	"serviceName": "ccinbox",
     	"payload": {
-    		"memberId": "82",
+    		"memberId": "2022",
+    		"providerId": "158066",
     		"userId": "SYSADM",
     		"ntstOrgId": "dev-pov"
     	},
@@ -50,7 +51,7 @@ headers:
     value: "82"
     description: ""
 authentication: {}
-metaSortKey: -1694691755691
+metaSortKey: -1694691755791
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
